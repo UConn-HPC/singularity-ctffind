@@ -14,7 +14,7 @@ dev="tar gzip gcc gcc-c++ make"
 build_deps="wxGTK3-devel fftw-devel libtiff-devel"
 runtime_deps="pdftk gnuplot"
 yum -y install epel-release	# for wxGTK3-devel
-yum -y install $dev $build_deps $debug
+yum -y install $dev $build_deps $runtime_deps $debug
 # RedHat Bug 1077718
 update-alternatives --install /bin/wx-config wx-config /bin/wx-config-3.0 10
 
