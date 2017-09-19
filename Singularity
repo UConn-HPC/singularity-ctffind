@@ -7,7 +7,6 @@ Bootstrap: docker
 From: centos:7
 
 %post
-
 # Install OS packages.
 debug="strace"
 dev="tar gzip gcc gcc-c++ make"
@@ -17,7 +16,6 @@ yum -y install epel-release	# for wxGTK3-devel
 yum -y install $dev $build_deps $runtime_deps $debug
 # RedHat Bug 1077718
 update-alternatives --install /bin/wx-config wx-config /bin/wx-config-3.0 10
-
 # Install ctffind.
 pn=ctffind
 v=4.1.8
