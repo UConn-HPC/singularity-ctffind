@@ -24,7 +24,6 @@ v=4.1.8
 url="http://grigoriefflab.janelia.org/sites/default/files/${pn}-${v}.tar.gz"
 tarball=$(basename $url)
 tardir=${tarball%.tar.*}
-pushd /tmp
 test -f $tarball || curl -o $tarball $url
 tar -xf $tarball
 cd $tardir
