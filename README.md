@@ -1,6 +1,6 @@
 # CTF Find container
 
-Grab the container from singularity hub:
+Grab the container from [singularity hub](https://singularity-hub.org/):
 
 ``` bash
 singularity pull shub://UConn-HPC/singularity-ctffind
