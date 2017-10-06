@@ -33,7 +33,6 @@ rm -f $prefix/bin/{install-sh,config.sub,config.guess,ltmain.sh,depcomp}
 %test
 which ctffind
 which ctffind_plot_results.sh
-echo | ctffind | head -6
 
 %runscript
 exec ctffind
